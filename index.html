@@ -73,13 +73,9 @@
     <h1>Welcome to the Meme Token Revolution</h1>
     <p>The only token where smacking Trump earns you glory (and maybe more).</p>
 <p style="color: lime; font-weight: bold; font-size: 1.2rem;">🚨 Contract is: 29MzzigtQAp22uNfkZ5RGqEYdoBTvmR2qZD98U81moon </p>
-<p id="countdown" style="font-size: 1.5rem; color: lime; font-weight: bold; animation: flash 1s infinite alternate;"></p>
 
 <style>
-@keyframes flash {
-  from { opacity: 1; }
-  to { opacity: 0.3; }
-}
+
 </style>
 
     <img src="animated_trump_smack.gif" alt="Smack Trump Animation">
@@ -128,28 +124,6 @@
     &copy; 2025 Smack Trump Token. All rights reserved.
   </footer>
 
-<script>
-  const countdownDate = new Date("2025-08-02T01:00:00Z").getTime();
-  const countdownElement = document.getElementById("countdown");
-
-  const x = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = countdownDate - now;
-
-    if (distance < 0) {
-      clearInterval(x);
-      countdownElement.innerHTML = "🚀 Contract Revealed!";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  }, 1000);
-</script>
 
 </body>
 </html>
